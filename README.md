@@ -14,11 +14,20 @@ For example:
 >> 🍦🌲 💧🍎🐍 🌲🎩🐘 🎱🐘🐍🌲 🏢🐸 🌲🍦🐵🐘🐍, 🍦🌲 💧🍎🐍 🌲🎩🐘 💧🏢🏃🐍🌲 🏢🐸 🌲🍦🐵🐘🐍...
 
 
-usage
----
+Install
+-------
+
+```
+  git clone https://github.com/JasonLeeFrench/pictopythocryptography
+  cd ./pictopythocryptography
+  [sudo] python setup.py install
+```
+
+Usage
+-----
 
 ``
-python pictopythocryptography.py [input] [emoji] [output]
+pictopythocryptography [input] [emoji] [output]
 ``
 
 where:
