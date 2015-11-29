@@ -27,11 +27,12 @@ Usage
 -----
 
 ``
-pictopythocryptography [input] [emoji] [output]
+pictopythocryptography [input] [emoji] [output] [--strip | --s]
 ``
 
 where:
 
 * input is your input text (defaults to input.txt)
-* emoji is a text file containing emojis seperated by line breaks, corresponding to each letter you want replaced (defaults to emoji.txt)
+* emoji is a text file containing emojis separated by line breaks, corresponding to each letter you want replaced (defaults to emoji.txt)
 * output is the text file to write to (defaults to output.txt)
+* use --strip to strip out punctuation

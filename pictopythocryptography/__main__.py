@@ -7,6 +7,9 @@ parser = argparse.ArgumentParser()
 
 for arg in arg_list:
   parser.add_argument(arg, nargs = '?', default = arg + '.txt')
+
+parser.add_argument('-s', '--strip', action='store_true')
+
 args = parser.parse_args()
 
 def main():
@@ -27,7 +30,7 @@ def parse_file(input_file, dic):
   for x in list(input_file.read().lower()):
     if x in dic:
       output_str += dic[x]
-    else:
+    elif not args.strip:
       output_str += x
   return output_str
 
